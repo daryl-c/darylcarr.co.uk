@@ -26,7 +26,7 @@ const Header = () => (
               About
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="/blog"
               activeClassName="font-bold text-primary-500 hover:none"
@@ -34,7 +34,7 @@ const Header = () => (
             >
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>
@@ -52,7 +52,7 @@ const Header = () => (
           />
           <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
         </svg>
-        <span className="ml-1"> Serverless | React | Nodejs</span>
+        <span className="ml-1"> Serverless | React | Nodejs </span>
       </p>
       <p className="mt-2 flex items-center text-sm leading-5 text-gray-500">
         <svg
@@ -66,7 +66,7 @@ const Header = () => (
             clipRule="evenodd"
           />
         </svg>
-        <span className="ml-1">Manchester</span>
+        <span className="ml-1">Manchester, UK</span>
       </p>
     </div>
   </header>
