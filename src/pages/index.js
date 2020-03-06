@@ -4,7 +4,7 @@ import queryString from "query-string"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import BlogSummary from "../components/post-summary"
+import PostSummary from "../components/post-summary"
 
 const getUniqueTags = posts => {
   const uniqueTags = new Set()
@@ -70,7 +70,7 @@ const IndexPage = ({ data, location }) => {
       return (
         <span
           key={`${blogTag}`}
-          className={`text-gray-400 sm:text-lg uppercase mx-2 px-2 py-2 focus:outline-none`}
+          className={`text-gray-500 sm:text-lg uppercase mx-2 px-2 py-2 focus:outline-none`}
         >
           {blogTag}
         </span>
@@ -81,7 +81,7 @@ const IndexPage = ({ data, location }) => {
       ? "font-medium text-secondary-700 hover:text-accent-600 focus:text-accent-600 sm:text-lg "
       : ""
     const availableClassNames = isAvailable
-      ? "text-secondary-400 hover:text-accent-500 focus:text-accent-500 sm:text-lg "
+      ? "text-secondary-500 hover:text-accent-500 focus:text-accent-500 sm:text-lg "
       : ""
 
     const linkClassNames = [selectedClassNames, availableClassNames].join("")
@@ -116,7 +116,7 @@ const IndexPage = ({ data, location }) => {
       <ul>
         {filteredPosts.map(post => (
           <li key={post.id}>
-            <BlogSummary {...post} />
+            <PostSummary {...post} />
           </li>
         ))}
       </ul>
