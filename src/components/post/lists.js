@@ -5,5 +5,5 @@ export const Ul = ({ children }) => (
 )
 
 export const Li = ({ children }) => (
-  <li className="text-primary-500 sm:text-lg my-4">{children}</li>
+  <li className="text-primary-600 sm:text-lg my-4">{children}</li>
 )

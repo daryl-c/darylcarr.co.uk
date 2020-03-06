@@ -66,11 +66,14 @@ const IndexPage = ({ data, location }) => {
     const isAvailable = availableTags.has(blogTag)
     const isUnavailable = !isSelected && !isAvailable
 
+    const sharedClassNames =
+      "mx-2 px-2 py-2 text-sm uppercase focus:outline-none sm:text-lg "
+
     if (isUnavailable) {
       return (
         <span
           key={`${blogTag}`}
-          className={`text-gray-500 sm:text-lg uppercase mx-2 px-2 py-2 focus:outline-none`}
+          className={`${sharedClassNames} text-gray-500`}
         >
           {blogTag}
         </span>
@@ -78,10 +81,10 @@ const IndexPage = ({ data, location }) => {
     }
 
     const selectedClassNames = isSelected
-      ? "font-medium text-secondary-700 hover:text-accent-600 focus:text-accent-600 sm:text-lg "
+      ? `${sharedClassNames} text-accent-500 hover:text-accent-700 focus:text-accent-700 `
       : ""
     const availableClassNames = isAvailable
-      ? "text-secondary-500 hover:text-accent-500 focus:text-accent-500 sm:text-lg "
+      ? `${sharedClassNames} text-secondary-500 hover:text-secondary-700 focus:text-secondary-700 `
       : ""
 
     const linkClassNames = [selectedClassNames, availableClassNames].join("")
@@ -97,7 +100,7 @@ const IndexPage = ({ data, location }) => {
       <Link
         key={blogTag}
         to={linkDestination}
-        className={`${linkClassNames} text-sm uppercase mx-2 px-2 py-2 focus:outline-none`}
+        className={`${linkClassNames} uppercase `}
       >
         {blogTag}
       </Link>
@@ -107,11 +110,14 @@ const IndexPage = ({ data, location }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <ul className="flex justify-center my-2 sm:my-4">
-        {Array.from(tagList).map(tag => (
-          <li key={tag}>{renderTag(tag)}</li>
-        ))}
-      </ul>
+      <div className="flex items-center flex-col my-2 sm:my-4">
+        <span className="text-sm sm:text-md text-gray-700">Filter by:</span>
+        <ul className="flex justify-center">
+          {Array.from(tagList).map(tag => (
+            <li key={tag}>{renderTag(tag)}</li>
+          ))}
+        </ul>
+      </div>
 
       <ul>
         {filteredPosts.map(post => (

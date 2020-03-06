@@ -36,7 +36,7 @@ const BlogPostTemplate = ({ data, location }) => {
           window && window.history.back()
         }}
         to="/"
-        className="inline-block sm:text-lg uppercase py-2 my-2 text-secondary-500 hover:text-accent-500 focus:text-accent-500 focus:outline-none"
+        className="inline-block sm:text-lg uppercase py-2 my-2 text-secondary-600 hover:text-accent-500 focus:text-accent-500 focus:outline-none"
       >
         &larr; back
       </Link>
