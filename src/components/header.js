@@ -4,7 +4,7 @@ import React from "react"
 
 const Header = () => (
   <header className="py-2 sm:py-4">
-    <div className="flex flex-row justify-between items-baseline">
+    <div className="flex flex-row justify-between items-center">
       <div>
         <h1 className="text-2xl text-primary-700 font-semibold">
           <Link
