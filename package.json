@@ -14,6 +14,7 @@
     "gatsby-plugin-mdx": "^1.0.75",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-purgecss": "^4.0.1",
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-source-contentful": "^2.1.89",
