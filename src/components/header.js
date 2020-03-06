@@ -20,8 +20,8 @@ const Header = () => (
           <li>
             <Link
               to="/about"
-              activeClassName="font-bold text-primary-500"
-              className="mr-2 py-2 px-1 pl-0 text-primary-400 hover:border-b-2 hover:border-secondary-300 focus:outline-none focus:border-b-2 focus:border-secondary-300 active:text-secondary-400 sm:pl-1 sm:text-xl"
+              activeClassName="font-bold text-primary-600"
+              className="mr-2 py-2 px-1 pl-0 text-primary-500 hover:border-b-2 hover:border-secondary-400 focus:outline-none focus:border-b-2 focus:border-secondary-400 active:text-secondary-400 sm:pl-1 sm:text-xl"
             >
               About
             </Link>
@@ -39,7 +39,7 @@ const Header = () => (
       </nav>
     </div>
     <div className="flex flex-col sm:flex-row mt-1 sm:mt-0">
-      <p className="mt-2 flex items-center text-sm leading-5 text-gray-500 sm:mr-4">
+      <p className="mt-2 flex items-center text-sm leading-5 text-gray-700 sm:mr-4">
         <svg
           className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
           fill="currentColor"
@@ -54,7 +54,7 @@ const Header = () => (
         </svg>
         <span className="ml-1"> Serverless | React | Nodejs </span>
       </p>
-      <p className="mt-2 flex items-center text-sm leading-5 text-gray-500">
+      <p className="mt-2 flex items-center text-sm leading-5 text-gray-700">
         <svg
           className="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400"
           fill="currentColor"
