@@ -13,6 +13,7 @@ module.exports = {
         "10xl": "9rem",
       },
       colors: {
+        twitter: "#1da0f2",
         primary: {
           "100": "#D9E2EC",
           "200": "#BCCCDC",
