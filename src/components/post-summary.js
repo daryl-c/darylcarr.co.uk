@@ -13,7 +13,7 @@ const PostSummary = ({ id, title, slug, heroImage, description }) => (
     />
     <div className="flex flex-col sm:ml-4">
       <Link
-        to={slug}
+        to={`/blog/${slug}`}
         className="block text-primary-600 hover:text-accent-500 focus:outline-none focus:text-accent-500 active:text-accent-700"
       >
         <h3 className="text-xl sm:text-2xl">{title}</h3>
