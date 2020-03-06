@@ -25,7 +25,7 @@ const blogComponents = {
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.contentfulBlogPost
-  const siteTitle = data.site.siteMetadata
+  const siteTitle = data.site.siteMetadata.title
 
   return (
     <Layout location={location}>
