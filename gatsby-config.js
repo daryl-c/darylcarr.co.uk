@@ -56,5 +56,17 @@ module.exports = {
       resolve: "gatsby-source-contentful",
       options: contentfulConfig,
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Daryl Carr`,
+        short_name: `darylcarr`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#627D98`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }
