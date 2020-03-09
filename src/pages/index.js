@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostSummary from "../components/post-summary"
 
+import { H2 } from "../components/post/headings"
+
 const getUniqueTags = posts => {
   const uniqueTags = new Set()
   posts.forEach(({ tags }) => tags.forEach(uniqueTags.add, uniqueTags))
@@ -111,21 +113,22 @@ const IndexPage = ({ data, location }) => {
     <Layout>
       <SEO title="Home" />
       <div className="flex items-center flex-col my-2 sm:my-4">
-        <span className="text-sm sm:text-md text-gray-700">Filter by:</span>
+        <H2>First post coming soon...</H2>
+        {/* <span className="text-sm sm:text-md text-gray-700">Filter by:</span>
         <ul className="flex justify-center">
           {Array.from(tagList).map(tag => (
             <li key={tag}>{renderTag(tag)}</li>
           ))}
-        </ul>
+        </ul> */}
       </div>
 
-      <ul>
+      {/* <ul>
         {filteredPosts.map(post => (
           <li key={post.id}>
             <PostSummary {...post} />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </Layout>
   )
 }
