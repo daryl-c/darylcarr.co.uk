@@ -39,7 +39,7 @@ const Header = () => (
       </nav> */}
       <div className="text-gray-500">
         <a
-          href="https://twitter.com/d4ryl_c"
+          href="https://twitter.com/darylcodes"
           className="hover:text-twitter focus:text-twitter focus:outline-none"
         >
           <span className="sr-only">Twitter</span>
